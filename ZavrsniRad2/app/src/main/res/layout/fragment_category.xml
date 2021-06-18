@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nyanza">
+
+    <TextView
+        android:id="@+id/tema7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Tema"
+        android:textAlignment="center"
+        android:textColor="@color/rich_black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skupljeni_bodovi7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:text="Skupljeni bodovi: /"
+        app:layout_constraintTop_toBottomOf="@+id/tema7"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/rang7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rang: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/skupljeni_bodovi7"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/bodovi_najboljeg7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bodovi najboljeg korisnika: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/rang7"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/bodovi_najlosijeg7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bodovi najlošijeg korisnika: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/bodovi_najboljeg7"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/prosjecni_bodovi7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prosječni broj bodova: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/bodovi_najlosijeg7"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/medijan7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medijan: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/prosjecni_bodovi7"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <ListView
+        android:id="@+id/lv_kartice"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="60dp"
+        android:scrollbarSize="@dimen/activity_vertical_margin"
+        android:scrollbarStyle="outsideInset"
+        android:background="@color/wild_blue"
+        app:layout_constraintBottom_toTopOf="@+id/spremi_napredak_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvPodijeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:text="Ako želite nastaviti učenje ove teme na drugom uređaju, pohranite svoje bodove"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/spremi_napredak_btn"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <Button
+        android:id="@+id/spremi_napredak_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Pohrani svoje bodove"
+        android:textColor="@color/nyanza"
+        android:background="@color/purple_navy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

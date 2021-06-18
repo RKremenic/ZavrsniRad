@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nyanza">
+
+    <TextView
+        android:id="@+id/pitanje8"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Pitanje"
+        android:textColor="@color/rich_black"
+        android:textAlignment="center"
+        android:background="@color/wild_blue"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/odgovor8"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Odgovor"
+        android:textAlignment="center"
+        android:textColor="@color/rich_black"
+        android:background="@color/yellow_green"
+        app:layout_constraintTop_toBottomOf="@id/pitanje8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/skupljeni_bodovi8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skupljeni bodovi: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/odgovor8"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/rang8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rang: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/skupljeni_bodovi8"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/bodovi_najboljeg8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bodovi najboljeg korisnika: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/rang8"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/bodovi_najlosijeg8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bodovi najlošijeg korisnika: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/bodovi_najboljeg8"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/prosjecni_bodovi8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prosječni broj bodova: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/bodovi_najlosijeg8"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/medijan8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medijan: /"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/prosjecni_bodovi8"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <TextView
+        android:id="@+id/novi_interval8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Novi interval: /"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/medijan8" />
+
+    <TextView
+        android:id="@+id/broj_tocnih8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broj točnih odgovora: /"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novi_interval8" />
+
+    <Button
+        android:id="@+id/povratak_na_temu_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Povratak na temu"
+        android:background="@color/purple_navy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

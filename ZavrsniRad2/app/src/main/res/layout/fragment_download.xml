@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DownloadFragment"
+    android:background="@color/nyanza">
+
+    <TextView
+        android:id="@+id/odaberi_teme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odaberite temu koju želite preuzeti na uređaj"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"/>
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="15dp"/>
+
+    <ListView
+        android:id="@+id/lv_teme"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="90dp"
+        android:scrollbarSize="@dimen/activity_vertical_margin"
+        android:background="@color/wild_blue"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/dark_wild_blue">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/preuzmi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preuzmi označenu temu"
+        android:background="@color/purple_navy"
+        android:textColor="@color/nyanza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_teme"
+        android:layout_marginHorizontal="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

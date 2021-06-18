@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nyanza">
+
+    <TextView
+        android:id="@+id/tekst_pitanja4"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Tekst pitanja"
+        android:textAlignment="center"
+        android:background="@color/yellow_green"
+        android:textColor="@color/rich_black"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/tocan_odgovor4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wild_blue"
+        android:textColor="@color/rich_black"
+        android:layout_marginHorizontal="20dp"
+        android:text="Tocan odgovor:"
+        app:layout_constraintTop_toBottomOf="@id/tekst_pitanja4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/tekst_odgovora4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Tekst odgovora"
+        android:textAlignment="center"
+        android:background="@color/wild_blue"
+        android:textColor="@color/rich_black"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tocan_odgovor4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/novi_interval4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novi interval: 3d"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/broj_tocnih4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/broj_tocnih4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Broj tocnih: 3d"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/nastavi_btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nastavi_btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nastavi"
+        android:textSize="25sp"
+        android:background="@color/purple_navy"
+        android:textColor="@color/nyanza"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
